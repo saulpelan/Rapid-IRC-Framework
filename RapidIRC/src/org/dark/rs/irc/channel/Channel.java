@@ -1,16 +1,8 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package org.dark.rs.irc.channel;
 
 import java.util.ArrayList;
 import org.dark.rs.irc.Session;
 
-/**
- *
- * @author Saul
- */
 public class Channel {
 
     private final String name;
@@ -47,7 +39,7 @@ public class Channel {
     void setMode(String mode) {
         modes.add(mode);
     }
-    
+
     void removeMode(String mode) {
         modes.remove(mode);
     }

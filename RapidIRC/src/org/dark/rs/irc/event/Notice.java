@@ -1,14 +1,7 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package org.dark.rs.irc.event;
 
-/**
- *
- * @author Saul
- */
 public class Notice {
+
     private String sender;
     private String recipient;
     private String message;
@@ -22,6 +15,7 @@ public class Notice {
     public void dispatch(NoticeListener l) {
         l.onNotice(this);
     }
+
     public String getSender() {
         return sender;
     }

@@ -1,13 +1,5 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package org.dark.rs.irc;
 
-/**
- *
- * @author Saul
- */
 public class User {
 
     private String nickname;
@@ -23,7 +15,7 @@ public class User {
     public void sendMessage(String location, String message) {
         sendMessage(location, message, false);
     }
-    
+
     public void sendMessage(String location, String message, boolean action) {
         if (action) {
             session.write("PRIVMSG " + nickname + " :\u0001ACTION " + message + "\u0001");

@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package org.dark.rs.irc;
 
 import org.dark.rs.irc.channel.ChannelMode;
@@ -94,7 +90,6 @@ public class Session extends EventManager {
         if (nickPassword != null && !nickPassword.isEmpty()) {
             write("PRIVMSG NickServ IDENTIFY " + nickPassword);
         }
-        //loggedIn = true;
     }
 
     public String getSetting(String key) {
@@ -113,7 +108,6 @@ public class Session extends EventManager {
         this.nickservPassword = nickservPassword;
     }
 
-    
     public boolean containsKey(String key) {
         return attributes.containsKey(key);
     }
